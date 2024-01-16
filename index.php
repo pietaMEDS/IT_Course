@@ -14,6 +14,7 @@
             </div>
         </div>
             <?php
+            session_start();
                 if (isset($_SESSION["user_key"])) {
                         
                     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
@@ -51,7 +52,7 @@
                                 break;
                             
                             case false:
-                                echo "<li><a href='page/registration'>Регистрация/Вход</a></li>";
+                                echo "<li><a href='pages/registration'>Регистрация/Вход</a></li>";
                                 break;
                         }
                     ?>
