@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/SignUp.css">
 </head>
 <body>
     <main>
@@ -27,11 +28,11 @@
             </div>
             <div>
                 <label for="form_password">Ваш пароль</label>
-                <input required type="text" name="form_password">
+                <input required type="password" name="form_password">
             </div>
             <div>
                 <label for="form_password_ret">Повторите пароль</label>
-                <input required type="text" name="form_password_ret">
+                <input required type="password" name="form_password_ret">
             </div>
             <div>
                 <input type="submit">
@@ -40,7 +41,7 @@
             <a href="login.php">У меня уже есть аккаунт!</a>
         </div>
     </main>
-    <div class="warning">
+    <warning>
         <?php
             //validate
             if ($_GET) {
@@ -80,6 +81,6 @@
                 }
             }
         ?>
-    </div>
+    </warning>
 </body>
 </html>

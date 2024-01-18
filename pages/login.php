@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/SignUp.css">
 </head>
 <body>
     <main>
@@ -24,6 +25,7 @@
 
     <warning>
         <?php
+        error_reporting(0);
             require "../modules/DB_connect.php";
             if (isset($_GET)) {
                 $result = $mysqli->query("SELECT password, user_key FROM users WHERE login = '".$_GET["form_login"]."'");
@@ -32,11 +34,11 @@
                     echo "Неправильно введён логин или пароль!";
                 }elseif (password_hash($_GET["form_password"],PASSWORD_DEFAULT)===$row["password"]) {
                     session_start();
+                    echo "Вы вошли";
                     $_SESSION["user_key"] = $row["user_key"];
                     header("Location: ../index.php");
                 }
             }
-            
         ?>
     </warning>
 </body>

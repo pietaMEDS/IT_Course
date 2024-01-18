@@ -1,0 +1,149 @@
+
+
+html {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+
+     font-family: Arial, sans-serif;
+     background-color: rgb(23,23,27);
+
+ }
+header
+{
+    /*background-color: rgba(255, 0, 0, 0.13);*/
+
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+header div
+{
+    display: flex;
+    align-items: center;
+}
+header div div {
+    font-weight: bold;
+    font-size: 20px;
+}
+ul {
+    list-style-type: none; display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(35,35,42);
+    padding: 20px;
+    border-radius: 25px;
+}
+main {
+    margin: 20px;
+}
+advert {
+    margin: 20px 0;
+    text-align: center;
+
+}
+#carousel-container {
+
+    /*background-color: rgba(173, 255, 47, 0.19);*/
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#carousel-wrapper {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s;
+}
+
+#carousel-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* style.css */
+
+
+.block {
+    /*background-color: rgba(247, 218, 8, 0.12);*/
+color: #ffffff;
+    /*padding: 20px;*/
+    padding-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum and maximum width as per your requirement */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.header-grid-item {
+    background-color: rgb(35,35,42);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.header-grid-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-grid-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#Course-library{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course{
+    overflow: hidden;
+    width: 330px;
+    border-radius: 15px;
+    height: 5%;
+    background-color: rgb(35,35,42);
+    color: white;
+
+}
+
+.course img{
+    width: 330px;
+}
+
+.course h3{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
